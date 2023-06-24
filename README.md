@@ -1,5 +1,5 @@
 # printf C implementation
-This is a simple implementation of the standard library's printf function in the C programming language
+This is the implementation of the standard library's printf function in the C programming language
 It handles all the format specifiers.
 Done in order to understand variadic functions in C
 
