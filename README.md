@@ -1,7 +1,7 @@
 # printf C implementation
-This is the implementation of the standard library's printf function in the C programming language
+The implementation of the standard library's printf function in C programming language
 It handles all the format specifiers.
-Done in order to understand variadic functions in C
+Done in order to understand variadic functions in C.
 
 ## Testing the function
 ```bash
