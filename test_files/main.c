@@ -2,7 +2,9 @@
 
 int main()
 {
-    char *string = "This is a string";
-    _printf("Today %s", string);
+    char c = 'b';
+    char *str = "STRING";
+    _printf("Today %c %s", c, str);
+    _printf("String %s", str);
     return 0;
 }
