@@ -8,7 +8,7 @@
 */
 int print_char(char c)
 {
-	return (write(STDOUT_FILENO, &c, 1));
+	return (write(1, &c, 1));
 }
 
 /**
@@ -35,5 +35,29 @@ int print_string(char *c)
 */
 int print_int(int a)
 {
-	return (print_char(a));
+	int digitCount = 1;
+	int temp;
+
+	if (a < 0)
+	{
+		print_char('-');
+		a = -a;
+	}
+	temp = a;
+	/*Getting the number of digits in the number a*/
+	while (temp >= 10)
+	{
+		temp /= 10;
+		digitCount++;
+	}
+	while (digitCount > 0)
+	{
+		int digit;
+
+		digit = a / power_of_ten(digitCount - 1);
+		print_char('0' + digit);
+		a %= power_of_ten(digitCount - 1);
+		digitCount--;
+	}
+	return (0);
 }
